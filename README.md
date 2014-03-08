@@ -1,5 +1,6 @@
 # My dotfiles
 So I don't have to redo them all the time ;)
+
 `git clone https://github.com/Pkallesoe/dotfiles`
 `cd ~/dotfiles && chmod +x make_symlink.sh && ./make_symlink.sh`
 
