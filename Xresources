@@ -1,7 +1,5 @@
 ! Colour Scheme
-!#include "/home/pask/.config/termcolours/jellybeans"
-#include "/home/pask/.config/termcolours/hybrid"
-!#include "/home/pask/.config/termcolours/prezioso"
+#include "/home/pask/dotfiles/colours/hybrid"
 
 URxvt.scrollBar:            false
 URxvt.scrollWithbuffer:     true
