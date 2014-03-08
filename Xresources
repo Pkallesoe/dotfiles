@@ -1,0 +1,38 @@
+! Colour Scheme
+!#include "/home/pask/.config/termcolours/jellybeans"
+#include "/home/pask/.config/termcolours/hybrid"
+!#include "/home/pask/.config/termcolours/prezioso"
+
+URxvt.scrollBar:            false
+URxvt.scrollWithbuffer:     true
+URxvt.scrollTtyOutput:      true
+URxvt.colorUL:              #4682B4
+URxvt.perl-ext-common:      default,clipboard,url-select,keyboard-select,font-size
+URxvt.url-select.launcher:  dwb
+URxvt.url-select.underline: true
+URxvt.keysym.M-u:           perl:url-select:select_next
+URxvt.keysym.M-Escape:      perl:keyboard-select:activate
+URxvt.keysym.M-s:           perl:keyboard-select:search
+
+! Change font on the fly.
+URxvt.keysym.C-Up:          perl:font-size:increase
+URxvt.keysym.C-Down:        perl:font-size:decrease
+URxvt.keysym.C-S-Up:        perl:font-size:incglobal
+URxvt.keysym.C-S-Down:      perl:font-size:decglobal
+
+! Fonts.
+!URxvt.font: xft:Monaco for Powerline:regular:size=8
+!URxvt.font: xft:Monospace:pixelsize=11
+!URxvt.font: xft:Droid Sans Mono for Powerline:regular:size=7
+!URxvt.font: xft:Dejavu Sans Mono for Powerline:size=10
+URxvt.font: -*-terminus-medium-r-*-*-12-*-*-*-*-*-*-* 
+URxvt*internalBorder: 9
+
+
+!URxvt*depth: 32
+!URxvt*background: rgba:0000/0000/0200/f332
+
+URxvt*cursorColor: #799D6A
+
+! Testing
+URxvt.loginShell: true
