@@ -52,14 +52,15 @@ eval "$(fasd --init auto)"
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=$PATH:/home/peter/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/core_perl:/home/peter/bin:/home/peter/bin:/home/peter/.gem/ruby/2.0.0/bin
+#export PATH=${PATH}:/home/pask/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/core_perl:/home/peter/bin:/home/peter/bin:/home/peter/.gem/ruby/2.1.0/bin
+export PATH="${PATH}:/home/pask/bin:/home/pask/.gem/ruby/2.1.0/bin:$(ruby -rubygems -e"puts Gem.user_dir")/bin" 
 export EDITOR=vim
 if [ -n "$DISPLAY" ]; then
     export BROWSER=firefox
   else
     export BROWSER=links
 fi
-export MAIL=/home/peter/MAIL
+export MAIL=/home/pask/MAIL
 
 zle -N up-line-or-beginning-search
 zle -N down-line-or-beginning-search
