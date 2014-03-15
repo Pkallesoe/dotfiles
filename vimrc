@@ -17,6 +17,8 @@ Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-rails'
 Bundle 'myusuf3/numbers.vim'
 Bundle 'sjl/gundo.vim'
+Bundle 'bling/vim-airline'
+Bundle "mattn/emmet-vim"
 
 """""""""""""""""""""""""
 " Basic configs         "
@@ -65,14 +67,16 @@ nnoremap ,w :w<CR>	" ,w to save in normal mode
 """""""""""""""""""""""""
 " Statusbar		        "
 """""""""""""""""""""""""
-set statusline=
-set statusline+=%<                       " cut at start
-set statusline+=%2*[%n%H%M%R%W]%*        " buffer number, and flags
-set statusline+=%-40f                    " relative path
-set statusline+=%=                       " seperate between right- and left-aligned
-set statusline+=%1*%y%*%*                " file type
-set statusline+=%10((%l/%L)%)            " line and column
-set statusline+=%p%%                     " percentage of file
+"set statusline=
+"set statusline+=%<                       " cut at start
+"set statusline+=%2*[%n%H%M%R%W]%*        " buffer number, and flags
+"set statusline+=%-40f                    " relative path
+"set statusline+=%=                       " seperate between right- and left-aligned
+"set statusline+=%1*%y%*%*                " file type
+"set statusline+=%10((%l/%L)%)            " line and column
+"set statusline+=%p%%                     " percentage of file
+
+set laststatus=2
 
 " Easy split navigation
 nnoremap <C-h> <C-w>h

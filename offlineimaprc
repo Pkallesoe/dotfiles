@@ -11,7 +11,7 @@ quick = 10
 
 [Repository Gmail-Local]
 type = Maildir
-localfolders = ~/Mail/Gmail
+localfolders = ~/.mail/Gmail
 
 [Repository Gmail-Remote]
 type = Gmail
